@@ -1,0 +1,3 @@
+C:/Users/mille/OneDrive/Desktop/graphics/filefun/build/CMakeFiles/filefun.dir
+C:/Users/mille/OneDrive/Desktop/graphics/filefun/build/CMakeFiles/edit_cache.dir
+C:/Users/mille/OneDrive/Desktop/graphics/filefun/build/CMakeFiles/rebuild_cache.dir
