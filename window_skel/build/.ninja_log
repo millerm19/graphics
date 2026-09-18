@@ -1,0 +1,12 @@
+# ninja log v7
+66	344	8113674535191190	CMakeFiles/window_skel.dir/source/renderer.cpp.obj	bb0f1a372fc4a61a
+48	450	8113674534959078	CMakeFiles/window_skel.dir/source/window.cpp.obj	91a691ec5f444e1e
+35	542	8113674534917295	CMakeFiles/window_skel.dir/source/main.cpp.obj	2c75432c1b65285e
+80	542	8113674535329209	CMakeFiles/window_skel.dir/source/texture_display.cpp.obj	bd1c6bd06da443f6
+543	787	8113674539986404	window_skel.exe	3527769cfc77c08b
+61	539	8113676326276839	CMakeFiles/window_skel.dir/source/main.cpp.obj	2c75432c1b65285e
+540	740	8113676331085684	window_skel.exe	3527769cfc77c08b
+55	306	8113678974350740	CMakeFiles/window_skel.dir/source/renderer.cpp.obj	bb0f1a372fc4a61a
+307	511	8113678976855898	window_skel.exe	3527769cfc77c08b
+6	258	8113681996635108	CMakeFiles/window_skel.dir/source/window.cpp.obj	91a691ec5f444e1e
+259	396	8113681999125767	window_skel.exe	3527769cfc77c08b
