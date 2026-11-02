@@ -1,3 +1,0 @@
-C:/Users/mille/OneDrive/Desktop/graphics/window_skel/build/CMakeFiles/window_skel.dir
-C:/Users/mille/OneDrive/Desktop/graphics/window_skel/build/CMakeFiles/edit_cache.dir
-C:/Users/mille/OneDrive/Desktop/graphics/window_skel/build/CMakeFiles/rebuild_cache.dir
