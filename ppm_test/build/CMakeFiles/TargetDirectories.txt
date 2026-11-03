@@ -1,3 +1,0 @@
-C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/build/CMakeFiles/ppm_test.dir
-C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/build/CMakeFiles/edit_cache.dir
-C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/build/CMakeFiles/rebuild_cache.dir
