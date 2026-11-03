@@ -59,6 +59,7 @@ CMakeFiles/ppm_test.dir/main.cpp.obj: C:/Users/mille/OneDrive/Desktop/graphics/p
   C:/msys64/ucrt64/include/c++/16.2.0/bits/ranges_cmp.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/ranges_util.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/requires_hosted.h \
+  C:/msys64/ucrt64/include/c++/16.2.0/bits/specfun.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/stdexcept_except.h \
   C:/msys64/ucrt64/include/c++/16.2.0/bits/stdexcept_throw.h \
@@ -81,6 +82,7 @@ CMakeFiles/ppm_test.dir/main.cpp.obj: C:/Users/mille/OneDrive/Desktop/graphics/p
   C:/msys64/ucrt64/include/c++/16.2.0/cctype \
   C:/msys64/ucrt64/include/c++/16.2.0/cerrno \
   C:/msys64/ucrt64/include/c++/16.2.0/clocale \
+  C:/msys64/ucrt64/include/c++/16.2.0/cmath \
   C:/msys64/ucrt64/include/c++/16.2.0/compare \
   C:/msys64/ucrt64/include/c++/16.2.0/concepts \
   C:/msys64/ucrt64/include/c++/16.2.0/cstddef \
@@ -112,6 +114,18 @@ CMakeFiles/ppm_test.dir/main.cpp.obj: C:/Users/mille/OneDrive/Desktop/graphics/p
   C:/msys64/ucrt64/include/c++/16.2.0/string \
   C:/msys64/ucrt64/include/c++/16.2.0/string_view \
   C:/msys64/ucrt64/include/c++/16.2.0/system_error \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/bessel_function.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/beta_function.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/ell_integral.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/exp_integral.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/gamma.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/hypergeometric.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/legendre_function.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/modified_bessel_func.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/poly_hermite.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/poly_laguerre.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/riemann_zeta.tcc \
+  C:/msys64/ucrt64/include/c++/16.2.0/tr1/special_function_util.h \
   C:/msys64/ucrt64/include/c++/16.2.0/tuple \
   C:/msys64/ucrt64/include/c++/16.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/16.2.0/typeinfo \
@@ -147,6 +161,7 @@ CMakeFiles/ppm_test.dir/main.cpp.obj: C:/Users/mille/OneDrive/Desktop/graphics/p
   C:/msys64/ucrt64/include/limits.h \
   C:/msys64/ucrt64/include/locale.h \
   C:/msys64/ucrt64/include/malloc.h \
+  C:/msys64/ucrt64/include/math.h \
   C:/msys64/ucrt64/include/process.h \
   C:/msys64/ucrt64/include/pthread.h \
   C:/msys64/ucrt64/include/pthread_compat.h \
@@ -169,8 +184,14 @@ CMakeFiles/ppm_test.dir/main.cpp.obj: C:/Users/mille/OneDrive/Desktop/graphics/p
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/stddef.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/syslimits.h
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/syslimits.h \
+  C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/color.h \
+  C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/vec3.h
 
+
+C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/vec3.h:
+
+C:/Users/mille/OneDrive/Desktop/graphics/ppm_test/color.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.2.0/include/mm_malloc.h:
 
@@ -224,6 +245,28 @@ C:/msys64/ucrt64/include/corecrt_startup.h:
 
 C:/msys64/ucrt64/include/corecrt_memory.h:
 
+C:/msys64/ucrt64/include/pthread_signal.h:
+
+C:/msys64/ucrt64/include/corecrt_malloc.h:
+
+C:/msys64/ucrt64/include/corecrt.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++config.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/typeinfo:
+
 C:/msys64/ucrt64/include/limits.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/requires_hosted.h:
@@ -258,11 +301,13 @@ C:/msys64/ucrt64/include/c++/16.2.0/bits/localefwd.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/locale_facets.tcc:
 
-C:/msys64/ucrt64/include/c++/16.2.0/streambuf:
+C:/msys64/ucrt64/include/c++/16.2.0/bits/specfun.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/locale_facets.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
+C:/msys64/ucrt64/include/c++/16.2.0/streambuf:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/ranges_cmp.h:
 
@@ -273,8 +318,6 @@ C:/msys64/ucrt64/include/c++/16.2.0/bits/locale_classes.h:
 C:/msys64/ucrt64/include/c++/16.2.0/bits/memoryfwd.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/exception_ptr.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/bits/iterator_concepts.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/new_throw.h:
 
@@ -306,14 +349,6 @@ C:/msys64/ucrt64/include/corecrt_wstdlib.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/charconv.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++locale.h:
-
-C:/msys64/ucrt64/include/wctype.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/debug/assertions.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/bits/move.h:
-
 C:/msys64/ucrt64/include/c++/16.2.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/cstdio:
@@ -324,8 +359,6 @@ C:/msys64/ucrt64/include/_mingw_locale.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/cstddef:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++config.h:
-
 C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/msys64/ucrt64/include/_mingw_off_t.h:
@@ -335,6 +368,8 @@ C:/msys64/ucrt64/include/_mingw_mac.h:
 C:/msys64/ucrt64/include/c++/16.2.0/bits/new_except.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/functional_hash.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/riemann_zeta.tcc:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/ptr_traits.h:
 
@@ -350,25 +385,19 @@ C:/msys64/ucrt64/include/c++/16.2.0/backward/binders.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/numbers:
 
-C:/msys64/ucrt64/include/c++/16.2.0/typeinfo:
-
 C:/msys64/ucrt64/include/c++/16.2.0/bits/basic_ios.tcc:
-
-C:/msys64/ucrt64/include/pthread_signal.h:
-
-C:/msys64/ucrt64/include/corecrt_malloc.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/bits/std_abs.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/bits/ranges_util.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/bits/ostream_insert.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/system_error:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/concept_check.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/cxxabi_init_exception.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/ranges_util.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/std_abs.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/ostream_insert.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/system_error:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/basic_ios.h:
 
@@ -406,19 +435,35 @@ C:/msys64/ucrt64/include/c++/16.2.0/bits/string_view.tcc:
 
 C:/msys64/ucrt64/include/c++/16.2.0/ext/alloc_traits.h:
 
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/ell_integral.tcc:
+
 C:/msys64/ucrt64/include/c++/16.2.0/bits/stringfwd.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/uses_allocator.h:
 
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_iterator.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/bessel_function.tcc:
+
 C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_function.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/version.h:
+
+C:/msys64/ucrt64/include/math.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/ios:
 
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/type_traits:
+
+C:/msys64/ucrt64/include/c++/16.2.0/bits/iterator_concepts.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/cmath:
 
 C:/msys64/ucrt64/include/time.h:
 
@@ -434,7 +479,11 @@ C:/msys64/ucrt64/include/c++/16.2.0/bits/memory_resource.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/bits/range_access.h:
 
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/gamma.tcc:
+
 C:/msys64/ucrt64/include/c++/16.2.0/concepts:
+
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/modified_bessel_func.tcc:
 
 C:/msys64/ucrt64/include/c++/16.2.0/cstdlib:
 
@@ -444,11 +493,17 @@ C:/msys64/ucrt64/include/c++/16.2.0/cwchar:
 
 C:/msys64/ucrt64/include/c++/16.2.0/cwctype:
 
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/exp_integral.tcc:
+
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/hypergeometric.tcc:
+
 C:/msys64/ucrt64/include/c++/16.2.0/bits/hash_bytes.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/limits:
 
 C:/msys64/ucrt64/include/c++/16.2.0/debug/debug.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/legendre_function.tcc:
 
 C:/msys64/ucrt64/include/c++/16.2.0/clocale:
 
@@ -461,6 +516,12 @@ C:/msys64/ucrt64/include/c++/16.2.0/exception:
 C:/msys64/ucrt64/include/c++/16.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/16.2.0/ext/atomicity.h:
+
+C:/msys64/ucrt64/include/corecrt_wconio.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/gthr.h:
+
+C:/msys64/ucrt64/include/c++/16.2.0/ext/numeric_traits.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/ext/string_conversions.h:
 
@@ -480,32 +541,22 @@ C:/msys64/ucrt64/include/c++/16.2.0/bits/char_traits.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/new:
 
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/special_function_util.h:
+
 C:/msys64/ucrt64/include/_timeval.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/pstl/pstl_config.h:
 
 C:/msys64/ucrt64/include/c++/16.2.0/stdlib.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/beta_function.tcc:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/poly_hermite.tcc:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+C:/msys64/ucrt64/include/wctype.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
+C:/msys64/ucrt64/include/c++/16.2.0/debug/assertions.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_algobase.h:
+C:/msys64/ucrt64/include/c++/16.2.0/bits/move.h:
 
-C:/msys64/ucrt64/include/c++/16.2.0/bits/stl_iterator.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/error_constants.h:
-
-C:/msys64/ucrt64/include/corecrt_wconio.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/ext/numeric_traits.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/gthr.h:
-
-C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/os_defines.h:
-
-C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/c++/16.2.0/tr1/poly_laguerre.tcc:
