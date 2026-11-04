@@ -2,13 +2,8 @@
 #define HITTABLE_LIST_H
 
 
-#include "hittable.h"
-
-#include <memory>
+#include "rtweekend.h"
 #include <vector>
-
-using std::make_shared;
-using std::shared_ptr;
 
 
 class hittable_list : public hittable {
@@ -29,7 +24,7 @@ class hittable_list : public hittable {
             objects.push_back(object);
         }
 
-        bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const override {
+        bool hit(const ray& r, float ray_tmin, float ray_tmax, hit_record& rec) const override {
             hit_record temp_rec;
             bool hit_anything = false;
             auto closest_so_far = ray_tmax;
