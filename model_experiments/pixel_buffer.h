@@ -14,9 +14,9 @@ public:
     void set_pixel(int x, int y, const color& pixel_color) {
         int index = (y * image_width + x) * 3;
 
-        pixels[index + 0] = static_cast<unsigned char>(255.999 * pixel_color.x());
-        pixels[index + 1] = static_cast<unsigned char>(255.999 * pixel_color.y());
-        pixels[index + 2] = static_cast<unsigned char>(255.999 * pixel_color.z());
+        pixels[index + 0] = static_cast<unsigned char>(255.999 * linear_to_gamma(pixel_color.x()));
+        pixels[index + 1] = static_cast<unsigned char>(255.999 * linear_to_gamma(pixel_color.y()));
+        pixels[index + 2] = static_cast<unsigned char>(255.999 * linear_to_gamma(pixel_color.z()));
     }
 
     int width() const { return image_width; }
