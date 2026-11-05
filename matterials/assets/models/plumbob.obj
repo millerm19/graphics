@@ -1,0 +1,22 @@
+# Sims-style plumbob: a simple octahedral diamond mesh
+# Coordinates: Y is up. Eight triangular faces, with outward-facing winding.
+o plumbob
+
+v  0.00  1.60  0.00
+v  0.65  0.00  0.00
+v  0.00  0.00  0.65
+v -0.65  0.00  0.00
+v  0.00  0.00 -0.65
+v  0.00 -1.60  0.00
+
+# Top four faces
+f 1 3 2
+f 1 4 3
+f 1 5 4
+f 1 2 5
+
+# Bottom four faces
+f 6 2 3
+f 6 3 4
+f 6 4 5
+f 6 5 2
