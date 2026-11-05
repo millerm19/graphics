@@ -5,10 +5,8 @@
 #include <iostream>
 #include <limits>
 #include <memory>
+#include <random>
 
-
-using std::make_shared;
-using std::shared_ptr;
 
 
 const float infinity = std:: numeric_limits<float>::infinity();
@@ -18,10 +16,21 @@ inline float degrees_to_radians(float degrees) {
     return degrees* pi / 180.f;
 }
 
-#include "color.h"
-#include "ray.h"
+inline float random_float() {
+    return float(std::rand()) / (RAND_MAX + 1.0f);
+}
+
+inline float random_float(float min, float max) {
+    return min + (max-min)*random_float();
+}
+
 #include "vec3.h"
 #include "interval.h"
+#include "ray.h"
+#include "color.h"
+
+using std::make_shared;
+using std::shared_ptr;
 
 
 #endif
