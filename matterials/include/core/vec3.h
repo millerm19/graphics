@@ -1,6 +1,8 @@
 #ifndef VEC3_H
 #define VEC3_H
 
+
+#include "core/rtweekend.h"
 #include <cmath>
 #include <ostream>
 

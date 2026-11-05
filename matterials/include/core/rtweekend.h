@@ -2,6 +2,7 @@
 #define RTWEEKEND_H
 
 #include <cmath>
+#include <cstdlib>
 #include <iostream>
 #include <limits>
 #include <memory>
@@ -23,11 +24,6 @@ inline float random_float() {
 inline float random_float(float min, float max) {
     return min + (max-min)*random_float();
 }
-
-#include "core/vec3.h"
-#include "helper/interval.h"
-#include "core/ray.h"
-#include "helper/color.h"
 
 using std::make_shared;
 using std::shared_ptr;

@@ -4,6 +4,8 @@
 #include <vector>
 #include "helper/color.h"
 
+#include "third_party/stb_image_write.h"
+
 class pixel_buffer {
 public:
     pixel_buffer() : image_width(0), image_height(0) {}
@@ -28,6 +30,17 @@ public:
 
     int bytes_per_row() const {
         return image_width * 3;
+    }
+
+    void save_to_image(const char* file) {
+        stbi_write_png(
+            file,
+            width(),
+            height(),
+            3,
+            data(),
+            bytes_per_row()
+        );
     }
 
 private:

@@ -1,6 +1,9 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
+#include "core/rtweekend.h"
+#include <iostream>
+
 #include "objects/hittable.h"
 #include "outputting/pixel_buffer.h"
 #include "materials/material.h"
@@ -12,13 +15,18 @@ class camera {
         int samples_per_pixel = 10;
         int max_depth = 10;
 
+        float vfov = 90;
+        point3 lookfrom = point3(0, 0, 0);
+        point3 lookat = point3(0, 0, -1);
+        vec3 vup = vec3(0, 1, 0);   // relative up to camera // set to world up
+
         const pixel_buffer& render(const hittable& world) {
             initialize();
 
             //std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
 
             for(int j=0; j<image_height; j++) {
-                std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
+                //std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
 
                 for(int i = 0; i < image_width; i++) {
                     color pixel_color(0, 0, 0);
@@ -32,7 +40,7 @@ class camera {
                 }
             }
 
-            std::clog << "\rDone.               \n";
+            //std::clog << "\rDone.               \n";
             return buffer;
         }
     
@@ -43,6 +51,7 @@ class camera {
         point3 pixel00_loc;
         vec3 pixel_delta_u;
         vec3 pixel_delta_v;
+        vec3 u, v, w;
 
         pixel_buffer buffer;
 
@@ -54,19 +63,28 @@ class camera {
 
             pixel_samples_scale = 1.f / samples_per_pixel;
 
+            center = lookfrom;
+
             center = point3(0, 0, 0);
 
-            auto focal_length = 1.f;
-            auto viewport_height = 2.f;
+            auto focal_length = (lookfrom - lookat).length();
+            auto theta = degrees_to_radians(vfov);
+            auto h = std::tan(theta/2);
+            auto viewport_height = 2* h * focal_length;
             auto viewport_width = viewport_height * (float(image_width)/image_height);
 
-            auto viewport_u = vec3(viewport_width, 0, 0);
-            auto viewport_v = vec3(0, -viewport_height, 0);
+            //basis vectors for camera coords frame
+            w = unit_vector(lookfrom - lookat);
+            u = unit_vector(cross(vup, w));
+            v = cross(w, u);
+
+            vec3 viewport_u = viewport_width * u; // vec down viewport horx edge
+            vec3 viewport_v = viewport_height * v; // vec down viewport vert edge
 
             pixel_delta_u = viewport_u / image_width;
             pixel_delta_v = viewport_v / image_height;
 
-            auto viewport_upper_left = center - vec3(0, 0, focal_length) - viewport_u/2 - viewport_v/2;
+            auto viewport_upper_left = center - (focal_length * w) - viewport_u/2 - viewport_v/2;
             pixel00_loc = viewport_upper_left + 0.5f * (pixel_delta_u + pixel_delta_v);
         }
 

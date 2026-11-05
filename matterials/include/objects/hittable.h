@@ -1,6 +1,12 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
+
+#include "core/rtweekend.h"
+#include "core/ray.h"
+#include "core/vec3.h"
+#include "helper/interval.h"
+
 class material;
 
 class hit_record {
