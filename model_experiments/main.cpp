@@ -7,6 +7,9 @@
 #include "sphere.h"
 #include "triangle.h"
 
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
+
 int main() {
     hittable_list world;
 
@@ -20,8 +23,17 @@ int main() {
     camera cam;
 
     cam.aspect_ratio = 16.0 / 9.0;
-    cam.image_width  = 400;
-    cam.samples_per_pixel = 10;
+    cam.image_width  = 800;
+    cam.samples_per_pixel = 32;
 
-    cam.render(world);
+    pixel_buffer buffer = cam.render(world);
+
+    stbi_write_png(
+        "render.png",
+        buffer.width(),
+        buffer.height(),
+        3,
+        buffer.data(),
+        buffer.bytes_per_row()
+    );
 }

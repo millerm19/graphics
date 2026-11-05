@@ -2,6 +2,7 @@
 #define CAMERA_H
 
 #include "hittable.h"
+#include "pixel_buffer.h"
 
 class camera {
     public:
@@ -9,10 +10,10 @@ class camera {
         int image_width = 100;
         int samples_per_pixel = 10;
 
-        void render(const hittable& world) {
+        const pixel_buffer& render(const hittable& world) {
             initialize();
 
-            std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
+            //std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
 
             for(int j=0; j<image_height; j++) {
                 std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
@@ -23,11 +24,14 @@ class camera {
                         ray r = get_ray(i, j);
                         pixel_color += ray_color(r, world);
                     }
-                    write_color(std::cout, pixel_samples_scale * pixel_color);
+
+                    //write_color(std::cout, pixel_samples_scale * pixel_color);
+                    buffer.set_pixel(i, j, pixel_samples_scale * pixel_color);
                 }
             }
 
             std::clog << "\rDone.               \n";
+            return buffer;
         }
     
     private:
@@ -38,9 +42,13 @@ class camera {
         vec3 pixel_delta_u;
         vec3 pixel_delta_v;
 
+        pixel_buffer buffer;
+
         void initialize() {
             image_height = int(image_width / aspect_ratio);
             image_height = (image_height < 1) ? 1 : image_height;
+
+            buffer = pixel_buffer(image_width, image_height);
 
             pixel_samples_scale = 1.f / samples_per_pixel;
 
@@ -84,7 +92,7 @@ class camera {
 
             vec3 unit_direction = unit_vector(r.direction());
             auto a = 0.5f*(unit_direction.y() + 1.f);
-            return (1.f-a)*color(1.0, 1.0, 1.0) + 1*color(0.5f, 0.7f, 1.f);
+            return (1.f-a)*color(1.0, 1.0, 1.0) + a*color(0.5f, 0.7f, 1.f);
         }
 };
 
